@@ -1,1 +1,12 @@
+Bootstrap: docker
+From: nvidia/cuda:9.0-cudnn7-runtime-centos7
 
+%post
+    # install other needed packages
+    yum -y install epel-release
+    yum -y install python-pip
+    yum -y install cuda-9-0
+
+    # install tensorflow
+    pip install -U pip~=9.0
+    pip install tensorflow-gpu==1.6
