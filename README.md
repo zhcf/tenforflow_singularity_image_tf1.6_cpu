@@ -1,1 +1,1 @@
-# tf_singularity_image_tf1.6_cpu
+We use singularity as the container technology to support different AI frameworks. This repository provides singularity bootstrap files(the bootstrap file is like the docker file) for creating tensorflow container images. You can download the created images from singularity hub. https://www.singularity-hub.org/collections/1236
